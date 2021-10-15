@@ -13,7 +13,9 @@ $script = <<SCRIPT
 rpmdev-setuptree
 
 ln -s /vagrant/spec/ruby-enterprise.spec ~/rpmbuild/SPECS/ruby-enterprise.spec
-ln -s /vagrant/patches/ssl_no_ec2m.patch ~/rpmbuild/SOURCES/ssl_no_ec2m.patch
+for i in `ls /vagrant/patches/` do
+  ln -s /vagrant/patches/$1 ~/rpmbuild/SOURCES/$1
+done
 
 cd /tmp
 wget "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rubyenterpriseedition/ruby-enterprise-1.8.7-2012.02.tar.gz#ecf4a6d4c96b547b3bf4b6be14e082ddaa781e83ad7f69437cd3169fb7576e42"
