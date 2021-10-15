@@ -15,6 +15,7 @@ URL: http://www.rubyenterpriseedition.com/
 Source0: ruby-enterprise-%{version}-%{phusion_release}.tar.gz
 
 Patch0: ssl_no_ec2m.patch
+Patch1: tmalloc.patch
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{phusion_release}-root-%(%{__id_u} -n)
 BuildRequires: readline readline-devel ncurses ncurses-devel gdbm gdbm-devel glibc-devel autoconf gcc unzip openssl-devel db4-devel byacc
@@ -30,6 +31,7 @@ Ruby Enterprise Edition is a server-oriented friendly branch of Ruby which inclu
 %prep
 %setup -q -n ruby-enterprise-%{version}-%{phusion_release}
 %patch -P 0 -F1
+%patch -P 1
 
 %package rubygems
 Summary: The Ruby standard for packaging ruby libraries
