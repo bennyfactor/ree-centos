@@ -24,7 +24,7 @@ You'll need to perform these tasks:
 ### Download REE
 
     cd /tmp
-    wget http://rubyenterpriseedition.googlecode.com/files/ruby-enterprise-1.8.7-2012.02.tar.gz
+    wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rubyenterpriseedition/ruby-enterprise-1.8.7-2012.02.tar.gz#ecf4a6d4c96b547b3bf4b6be14e082ddaa781e83ad7f69437cd3169fb7576e42
     cp ruby-enterprise-1.8.7-2012.02.tar.gz ~/rpmbuild/SOURCES/
 
 ### Get Necessary System-specific Configs
