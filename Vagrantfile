@@ -16,13 +16,13 @@ ln -s /vagrant/spec/ruby-enterprise.spec ~/rpmbuild/SPECS/ruby-enterprise.spec
 ln -s /vagrant/patches/ssl_no_ec2m.patch ~/rpmbuild/SOURCES/ssl_no_ec2m.patch
 
 cd /tmp
-wget http://rubyenterpriseedition.googlecode.com/files/ruby-enterprise-1.8.7-2012.02.tar.gz
+wget "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rubyenterpriseedition/ruby-enterprise-1.8.7-2012.02.tar.gz#ecf4a6d4c96b547b3bf4b6be14e082ddaa781e83ad7f69437cd3169fb7576e42"
 cp ruby-enterprise-1.8.7-2012.02.tar.gz ~/rpmbuild/SOURCES/
 
 SCRIPT
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "opscode-centos-6.4"
+  config.vm.box = "generic/centos7"
   config.vm.provision "shell", inline: $packages
   config.vm.provision "shell", inline: $script, privileged: false
 end
