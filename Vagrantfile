@@ -22,7 +22,7 @@ cp ruby-enterprise-1.8.7-2012.02.tar.gz ~/rpmbuild/SOURCES/
 SCRIPT
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "generic/centos7"
+  config.vm.box = "geerlingguy/centos7"
   config.vm.provision "shell", inline: $packages
   config.vm.provision "shell", inline: $script, privileged: false
 end
