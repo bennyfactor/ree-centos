@@ -1,7 +1,7 @@
-diff --git a/source/distro/google-perftools-1.7/src/tcmalloc.cc b/source/distro/google-perftools-1.7/src/tcmalloc.cc
+diff --git source/distro/google-perftools-1.7/src/tcmalloc.cc source/distro/google-perftools-1.7/src/tcmalloc.cc
 index 8d94d20..0769425 100644
---- a/distro/google-perftools-1.7/src/tcmalloc.cc
-+++ b/distro/google-perftools-1.7/src/tcmalloc.cc
+--- source/distro/google-perftools-1.7/src/tcmalloc.cc
++++ source/distro/google-perftools-1.7/src/tcmalloc.cc
 @@ -137,6 +137,13 @@
  # define WIN32_DO_PATCHING 1
  #endif

@@ -33,6 +33,7 @@ Ruby Enterprise Edition is a server-oriented friendly branch of Ruby which inclu
 %patch -P 0 -F1
 %patch -P 1
 
+
 %package rubygems
 Summary: The Ruby standard for packaging ruby libraries
 Version: 1.3.5
